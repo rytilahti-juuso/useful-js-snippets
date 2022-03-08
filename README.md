@@ -52,8 +52,11 @@ addStyle(`
 `);
 ```
   
-  
+ 
 u-block filters:
+
+https://www.reddit.com/r/assholedesign/comments/p5phe2/you_are_now_completely_unable_to_view_twitter_on/  
+  
 ```
 twitter.com##div[role='dialog']
 twitter.com##[id$='PromoSlot']
