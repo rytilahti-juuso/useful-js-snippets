@@ -1,4 +1,6 @@
-useful-js-snippets
+# useful-js-snippets
+
+## Addstyle
 
 https://stackoverflow.com/questions/15505225/inject-css-stylesheet-as-string-using-javascript
 
@@ -51,7 +53,7 @@ addStyle(`
   }
 `);
 ```
-  
+## Filter
  
 u-block filters:
 
@@ -65,3 +67,18 @@ twitter.com##html:style(overflow:visible !important;)
 ```
 
 Those last two lines can be applied to any website at all that blocks scrolling 
+  
+ ## Generate UUID
+ 
+  
+  ``` javascript
+  let guid = function() {
+	function s4() {
+	  return Math.floor((1 + Math.random()) * 0x10000)
+		.toString(16)
+		.substring(1);
+	}
+	return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+	  s4() + '-' + s4() + s4() + s4();
+  }
+```
