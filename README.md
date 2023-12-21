@@ -1,4 +1,25 @@
 # useful-js-snippets
+Useful js snippets gathered around to manipulate DOM.
+
+## Search and Replace text elements (e.g. div, span, p)
+- is Case sensitive.
+``` javascript
+function searchAndReplace(original, replace) {
+    // Function to recursively search and replace text in text nodes
+    function replaceText(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+            if (node.textContent) {
+                node.textContent = node.textContent.replace(new RegExp(original, 'g'), replace);
+            }
+        } else {
+            node.childNodes.forEach(replaceText);
+        }
+    }
+
+    // Start the search and replace from the body of the document
+    replaceText(document.body);
+}
+```
 
 ## Addstyle
 
