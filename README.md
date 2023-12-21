@@ -1,5 +1,5 @@
 # useful-js-snippets
-Useful js snippets to manipulate DOM.
+Useful js snippets to manipulate DOM through console (or more preferred way of saving the function to Chrome's code snippets).
 
 ## Search and Replace text elements
 - Modifies text inside e.g. div, span and p
