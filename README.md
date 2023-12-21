@@ -1,7 +1,8 @@
 # useful-js-snippets
 Useful js snippets gathered around to manipulate DOM.
 
-## Search and Replace text elements (e.g. div, span, p)
+## Search and Replace text elements
+- Modifies text inside e.g. div, span and p
 - is Case sensitive.
 ``` javascript
 function searchAndReplace(original, replace) {
