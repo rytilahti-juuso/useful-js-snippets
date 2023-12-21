@@ -1,9 +1,10 @@
 # useful-js-snippets
-Useful js snippets gathered around to manipulate DOM.
+Useful js snippets to manipulate DOM.
 
 ## Search and Replace text elements
 - Modifies text inside e.g. div, span and p
 - is Case sensitive.
+- source: https://chat.openai.com/share/07bd388c-615d-4876-865d-0ac43889c68f 
 ``` javascript
 function searchAndReplace(original, replace) {
     // Function to recursively search and replace text in text nodes
