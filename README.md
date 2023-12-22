@@ -6,7 +6,7 @@ Useful js snippets to manipulate DOM through console (or more preferred way of s
 - is Case sensitive.
 - source: https://chat.openai.com/share/07bd388c-615d-4876-865d-0ac43889c68f 
 ``` javascript
-{ extra brackets so that the function is not cached.
+{// extra brackets so that the function is not cached.
 function searchAndReplace(original, replace) {
     // Function to recursively search and replace text in text nodes
     function replaceText(node) {
