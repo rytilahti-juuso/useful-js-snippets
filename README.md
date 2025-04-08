@@ -369,3 +369,29 @@ Those last two lines can be applied to any website at all that blocks scrolling
 }
 
  ```
+# Python Scripts
+
+## Convert docx to md and latex
+
+ ```python
+
+from markitdown import MarkItDown
+
+md = MarkItDown()  # Set to True to enable plugins
+result = md.convert("<file>.docx")
+print(result.text_content)
+
+# Write to file
+with open("<file>.md", "w", encoding="utf-8") as f:
+    f.write(result.text_content)
+
+import pypandoc
+pypandoc.download_pandoc()
+def md_to_latex(md_text):
+    return pypandoc.convert_text(md_text, 'latex', format='md')
+
+latex_output = md_to_latex(result.text_content)
+
+with open("<file>.tex", "w", encoding="utf-8") as f:
+    f.write(latex_output)
+ ```
