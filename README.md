@@ -386,9 +386,14 @@ with open("<file>.md", "w", encoding="utf-8") as f:
     f.write(result.text_content)
 
 import pypandoc
-pypandoc.download_pandoc()
+# pypandoc.download_pandoc()
 def md_to_latex(md_text):
-    return pypandoc.convert_text(md_text, 'latex', format='md')
+    return pypandoc.convert_text(
+        source= md_text, 
+        to='latex', 
+        format='md',
+        extra_args=['--wrap=none']  # Disable line-wrapping
+        )
 
 latex_output = md_to_latex(result.text_content)
 
